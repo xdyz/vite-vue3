@@ -3,12 +3,14 @@
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import SetUp from './components/SetUp.vue'
 import Ref from './components/Ref.vue';
+import Reactive from './components/Reactive.vue';
 </script>
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <SetUp msg="Hello Vue 3 + TypeScript + Vite" />
   <Ref />
+  <Reactive />
 </template>
 
 <style>

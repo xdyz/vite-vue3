@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+
+<script>
+
+  // 源数据
+  let person = {
+    name: 'John',
+    age: 30,
+  }
+
+
+  const person1 = new Proxy(person, {
+    get(target, key, receiver) {
+      console.log(`getting ${key}!`);
+      return Reflect.get(target, key, receiver);
+    },
+    set(target, key, value, receiver) {
+      console.log(`setting ${key}!`);
+      return Reflect.set(target, key, value, receiver);
+    },
+    deleteProperty(target, key) {
+      console.log(`deleting ${key}!`);
+      return Reflect.deleteProperty(target, key);
+    },
+  });
+
+  person1.name = 'Tom';
+
+  person1.bun = 3333333333
+
+  Object.assign(person1, {
+    age: 20,
+    name: 'Tom',
+    hj: 'hj'
+  })
+
+  console.log(delete person1.age);
+
+</script>
+
+</html>
