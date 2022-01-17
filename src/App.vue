@@ -4,6 +4,7 @@
 import SetUp from './components/SetUp.vue'
 import Ref from './components/Ref.vue';
 import Reactive from './components/Reactive.vue';
+import Computed from './components/Computed.vue';
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import Reactive from './components/Reactive.vue';
   <SetUp msg="Hello Vue 3 + TypeScript + Vite" />
   <Ref />
   <Reactive />
+  <Computed />
 </template>
 
 <style>

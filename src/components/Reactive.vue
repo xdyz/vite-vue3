@@ -10,7 +10,9 @@
 <script lang="ts">
 import { reactive } from 'vue'
 export default {
-  setup(){
+  setup({ attrs, emit, slots, state, onMounted }) {
+    console.log('setup');
+    
     const msg = reactive({
       name: 'sdfsdf',
       age: 33
@@ -41,6 +43,18 @@ export default {
       changeReactive2,
       arr
     }
-  }
+  },
+  beforeCreate(){
+    console.log('beforeCreate');
+  },
+  created(){
+    console.log('created');
+  },
+  beforeMount(){
+    console.log('beforeMount');
+  },
+  mounted(){
+    console.log('mounted');
+  },
 }
 </script>
