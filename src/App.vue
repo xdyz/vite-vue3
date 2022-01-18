@@ -5,14 +5,22 @@ import SetUp from './components/SetUp.vue'
 import Ref from './components/Ref.vue';
 import Reactive from './components/Reactive.vue';
 import Computed from './components/Computed.vue';
+import Watch from './components/Watch.vue';
 </script>
 
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
+
+  <br/>
   <SetUp msg="Hello Vue 3 + TypeScript + Vite" />
+  <br/>
   <Ref />
+  <br/>
   <Reactive />
+  <br/>
   <Computed />
+  <br/>
+  <Watch />
 </template>
 
 <style>
