@@ -7,6 +7,11 @@ import Reactive from './components/Reactive.vue';
 import Computed from './components/Computed.vue';
 import Watch from './components/Watch.vue';
 import WatchEffect from './components/WatchEffect.vue';
+import ToRef from './components/ToRef.vue';
+import ToRefs from './components/ToRefs.vue';
+import ShallowReactive from './components/ShallowReactive.vue';
+import ShallowRef from './components/ShallowRef.vue';
+import ToRaw from './components/ToRaw.vue';
 </script>
 
 <template>
@@ -24,6 +29,16 @@ import WatchEffect from './components/WatchEffect.vue';
   <Watch />
   <br/>
   <WatchEffect />
+  <br/>
+  <ToRef />
+  <br/>
+  <ToRefs />
+  <br/>
+  <ShallowReactive />
+  <br/>
+  <ShallowRef />
+  <br/>
+  <ToRaw />
 </template>
 
 <style>
