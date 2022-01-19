@@ -7,6 +7,8 @@ import Reactive from './components/Reactive.vue';
 import Computed from './components/Computed.vue';
 import Watch from './components/Watch.vue';
 import WatchEffect from './components/WatchEffect.vue';
+import LifeHooks from './components/LifeHooks.vue';
+import CustomHook from './components/CustomHook.vue';
 </script>
 
 <template>
@@ -24,6 +26,10 @@ import WatchEffect from './components/WatchEffect.vue';
   <Watch />
   <br/>
   <WatchEffect />
+  <br/>
+  <LifeHooks />
+  <br/>
+  <CustomHook />
 </template>
 
 <style>
