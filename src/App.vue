@@ -9,6 +9,11 @@ import Watch from './components/Watch.vue';
 import WatchEffect from './components/WatchEffect.vue';
 import LifeHooks from './components/LifeHooks.vue';
 import CustomHook from './components/CustomHook.vue';
+import ToRef from './components/ToRef.vue';
+import ToRefs from './components/ToRefs.vue';
+import ShallowReactive from './components/ShallowReactive.vue';
+import ShallowRef from './components/ShallowRef.vue';
+import ToRaw from './components/ToRaw.vue';
 </script>
 
 <template>
@@ -30,6 +35,15 @@ import CustomHook from './components/CustomHook.vue';
   <LifeHooks />
   <br/>
   <CustomHook />
+  <ToRef />
+  <br/>
+  <ToRefs />
+  <br/>
+  <ShallowReactive />
+  <br/>
+  <ShallowRef />
+  <br/>
+  <ToRaw />
 </template>
 
 <style>
