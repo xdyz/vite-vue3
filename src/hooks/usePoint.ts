@@ -1,12 +1,12 @@
-import { onBeforeUnmount, onMounted, reactive } from "vue"
+import { onBeforeUnmount, onMounted, reactive, ReactiveEffect } from "vue"
 
-export default () => {
+export const usePoint =   ():{x: number, y: number} => {
   let point = reactive({
     x: 0,
     y: 0
   })
 
-  const getPoint = (event) => {
+  const getPoint = (event: any) => {
     console.log(event.pageX, event.pageY);
     Object.assign(point, {
       x: event.pageX,
