@@ -10,6 +10,7 @@ import { ref, watch, reactive } from "@vue/runtime-core";
 
 const a = ref(1);
 const b = ref(2);
+const cdd = ref(3);
 const e = ref({
   age: 13,
   name: "33",
@@ -23,6 +24,8 @@ const c = reactive({
     add: 444,
   },
 });
+
+
 
 const d = reactive({
   name: "jhon",
