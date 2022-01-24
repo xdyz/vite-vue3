@@ -7,10 +7,28 @@
   <a-button @click="changeJob">点击job</a-button>
   <div>{{ job.type }}</div>
   <div>{{ job.mony }}</div>
+
+  <br />
+  <span>{{ userStore.nickname }}</span>
+  <span>{{ nickname }}</span>
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
+import { formProps } from "ant-design-vue/lib/form";
+import { ref, computed } from "vue";
+
+import   { useUserStore } from  '../stores/useUserStore'
+
+// 第一种获取方式
+const userStore = useUserStore()
+
+
+// 第二种可以将其设置没 computed
+
+const nickname = computed(() => {
+  return userStore.nickname
+})
+
 // 这样定义的数据就是普通数据，不是响应式数据
 let name = "123";
 
